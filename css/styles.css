@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400;600;700&display=swap");
+@import "reset.css";
+@import "variables.css";
+
+@import "greetings.css";
+@import "quotes.css";
+@import "bar.css";
+@import "todo.css";
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  border: none;
+  font-size: 26px;
+  color: rgba(87, 87, 87);
+  box-sizing: border-box;
+  padding: 6px 12px;
+  background-color: transparent;
+  border-bottom: 2px solid rgba(87, 87, 87, 0.5);
+  transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+  border-color: rgba(87, 87, 87);
+}
+
+.bgImage {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.hidden {
+  display: none;
+}
